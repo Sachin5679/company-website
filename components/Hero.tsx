@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section className="h-screen relative flex items-center justify-center bg-red-800">
+    <section className="h-screen relative flex items-center justify-center bg-red-800 pt-10">
       <div className="text-white px-10">
         <h1 className="md:text-9xl text-4xl">
           ASPC

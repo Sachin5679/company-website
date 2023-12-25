@@ -11,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="lg:flex lg:justify-between lg:items-center py-6 px-10 shadow-xl">
+    <div className="lg:flex lg:justify-between lg:items-center py-6 px-10 shadow-xl fixed top-0 left-0 right-0 z-20 bg-white">
       <div className="flex items-center justify-between">
         <div className="mr-4">
           {/* <Image src={companyLogo} alt="Company Logo" width={64} height={64} /> */}
-          <h1 className='text-4xl cursor-pointer'>ASPC Contractors</h1>
+          <h1 className='text-4xl cursor-pointer'><a href="/">ASPC Contractors</a></h1>
         </div>
         {/* Menu button for mobile */}
         <button
