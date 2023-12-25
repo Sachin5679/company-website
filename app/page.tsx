@@ -1,7 +1,15 @@
 import Image from 'next/image'
+import Navbar from '@/components/Navbar'
+import Hero from '@/components/Hero'
+import About from '@/components/About';
+import '@fontsource/jost';
 
 export default function Home() {
   return (
-    <h1>Hello</h1>
+    <main className="font-jost">
+      <Navbar />
+      <Hero />
+      <About />
+    </main>
   )
 }
