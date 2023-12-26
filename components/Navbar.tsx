@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="mr-4">
           {/* <Image src={companyLogo} alt="Company Logo" width={64} height={64} /> */}
-          <h1 className='text-4xl cursor-pointer'><a href="/">ASPC Contractors</a></h1>
+          <h1 className='text-4xl text-red-800 font-black cursor-pointer'><a href="/">ASPC</a></h1>
         </div>
         {/* Menu button for mobile */}
         <button
