@@ -3,7 +3,7 @@ import ServiceCard from './ServiceCard'
 
 const Services = () => {
   return (
-    <section id='services' className="p-12">
+    <section id='services' className="p-12 w-screen">
         <div className='text-center'>
         <div className=''>
             <h1 className='text-7xl font-black'>OUR SERVICES</h1>

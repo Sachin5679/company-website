@@ -4,6 +4,8 @@ import Hero from '@/components/Hero'
 import About from '@/components/About';
 import Services from '@/components/Services';
 import Profile from '@/components/Profile';
+import Team from '@/components/Team';
+import ContactUs from '@/components/ContactUs';
 import '@fontsource/jost';
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       <About />
       <Services />
       <Profile />
+      <Team />
+      <ContactUs />
     </main>
   )
 }
