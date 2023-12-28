@@ -8,7 +8,7 @@ const Services = () => {
         <div className=''>
             <h1 className='text-7xl font-black'>OUR SERVICES</h1>
             {/* <hr className="w-16 mx-auto border-t-2 border-gray-400 mb-4" /> */}
-            <p className='text-sm'>A wide range of services that we provide</p>
+            <p className='text-lg'>A wide range of services that we provide</p>
         </div>
         <div className='grid md:grid-cols-3 grid-cols-2'>
             <ServiceCard />

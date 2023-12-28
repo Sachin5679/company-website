@@ -34,7 +34,7 @@ const Profile = () => {
       <div className='text-center' style={containerStyle}>
         <div className='mb-6'>
           <h1 className='text-7xl font-black'>PROFILE</h1>
-          <p className='text-sm'>We possess a vast portfolio of work</p>
+          <p className='text-lg'>We possess a vast portfolio of work</p>
         </div>
         <div className='w-4/5 justify-center bg-gray-100 shadow-xl rounded-xl'>
           <Slider {...sliderSettings} className='text-center p-5'>
