@@ -1,7 +1,14 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 
-const MemberCard = () => {
+interface Member {
+  name: string;
+  image: string;
+  post: string;
+  linkedin: string;
+}
+
+const MemberCard = ({name, image, post, linkedin}: Member) => {
   return (
     <div className="flex flex-col items-center p-8 m-2 border rounded-xl shadow-xl bg-white hover:bg-green-100 transition-all w-1/3">
       {/* <FontAwesomeIcon icon={faLeaf} className="text-green-500 text-3xl mb-4" /> */}
