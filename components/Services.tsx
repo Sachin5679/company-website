@@ -40,7 +40,7 @@ const serviceList = [
 
 const Services = () => {
   return (
-    <section id="services" className="p-12 w-screen">
+    <section id="services" className="md:h-screen p-12 w-screen">
       <div className="text-center">
         <div className="">
           <h1 className="text-7xl font-black">OUR SERVICES</h1>

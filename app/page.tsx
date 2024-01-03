@@ -10,7 +10,7 @@ import '@fontsource/jost';
 
 export default function Home() {
   return (
-    <main className="font-jost">
+    <main className="font-jost w-screen">
       <Navbar />
       <Hero />
       <About />

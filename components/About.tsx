@@ -12,8 +12,12 @@ const About = () => {
       <div className="text-center md:text-left">
         <h2 className="text-4xl md:text-6xl font-bold mb-4">ABOUT US</h2>
         <p className="text-lg md:text-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+          ASPC prime values for the it’s preeminent QUALITY in selecting material
+          and eminence of the agreed work at its best, supporting by veteran
+          managerial rooting enabling RELIABILITY and TRUST for our
+          CUSTOMER SATISFACTION. Our Project Management team supports with a deal of passion to the
+          agreed projects strengthening the bind with our client or contractor
+          satisfaction. ASPC's commitment to excellence extends beyond material selection and work quality. Our unwavering dedication to effective project management ensures seamless execution, timely delivery, and cost-efficiency. By fostering a collaborative environment and emphasizing open communication, we prioritize the success of each project, building lasting partnerships and exceeding customer expectations.
         </p>
       </div>
     </section>

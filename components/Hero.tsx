@@ -13,7 +13,7 @@ const Hero = () => {
         <h1 className="md:text-5xl text-2xl">
           CONTRACTORS
         </h1>
-        <p className="my-2 text-red-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p className="my-2 text-red-200">Elevating Projects with Unmatched Quality, Reliability, and Customer Satisfaction.</p>
         <button className="outline my-4 p-4 rounded-xl hover:bg-white hover:text-red-800 hover:shadow-2xl hover:outline-none transition duration-300">
           <a href="mailto:info@aspcuae.com" className="flex items-center">
             Get in touch <FaArrowRight className="ml-2" />

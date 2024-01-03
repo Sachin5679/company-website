@@ -1,12 +1,12 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowRight } from 'react-icons/fa';
 
 const Profile = () => {
-  const [sliderSettings] = useState({
+  const [sliderSettings, setSliderSettings] = useState({
     dots: false,
     infinite: true,
     speed: 500,
@@ -15,6 +15,23 @@ const Profile = () => {
     autoplay: true,
     autoplaySpeed: 2000,
   });
+
+  const updateSliderSettings = () => {
+    const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
+    setSliderSettings({
+      ...sliderSettings,
+      slidesToShow: isMobile ? 1 : 4,
+    });
+  };
+
+  // Update slider settings on component mount and window resize
+  useEffect(() => {
+    updateSliderSettings();
+    window.addEventListener('resize', updateSliderSettings);
+    return () => {
+      window.removeEventListener('resize', updateSliderSettings);
+    };
+  }, []);
 
   const containerStyle: React.CSSProperties = {
     display: 'flex',

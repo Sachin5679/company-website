@@ -8,15 +8,15 @@ const ContactUs = () => {
   };
 
   return (
-    <section id='contact' className='flex flex-col h-screen bg-gray-200'>
+    <section id='contact' className='flex flex-col h-screen w-screen bg-gray-200'>
       <div className='flex-grow flex'>
         {/* Contact Form - Left Side */}
-        <form className='bg-white p-8 w-1/2 shadow-xl'>
-          <h1 className='text-4xl mb-6'>CONTACT US</h1>
-
+        <form className='p-8 w-1/2 shadow-xl bg-gray-100'>
+          <h1 className='text-4xl text-gray-800 font-bold'>CONTACT US</h1>
+          <p className='mb-6 text-gray-500'>Want to let us know something?</p>
           {/* Name Field */}
           <div className='mb-4'>
-            <label htmlFor='name' className='block text-sm font-medium text-gray-700'>
+            <label htmlFor='name' className='block text-sm font-medium text-gray-600'>
               Name:
             </label>
             <input
@@ -29,7 +29,7 @@ const ContactUs = () => {
 
           {/* Email Field */}
           <div className='mb-4'>
-            <label htmlFor='email' className='block text-sm font-medium text-gray-700'>
+            <label htmlFor='email' className='block text-sm font-medium text-gray-600'>
               Email:
             </label>
             <input
@@ -41,7 +41,7 @@ const ContactUs = () => {
           </div>
 
           <div className='mb-4'>
-            <label htmlFor='mobile' className='block text-sm font-medium text-gray-700'>
+            <label htmlFor='mobile' className='block text-sm font-medium text-gray-600'>
               Mobile number:
             </label>
             <input
@@ -54,12 +54,13 @@ const ContactUs = () => {
 
           {/* Message Field */}
           <div className='mb-4'>
-            <label htmlFor='message' className='block text-sm font-medium text-gray-700'>
+            <label htmlFor='message' className='block text-sm font-medium text-gray-600'>
               Message:
             </label>
             <textarea
               id='message'
               name='message'
+              rows={4}
               className='mt-1 p-2 w-full border border-gray-300 rounded-md'
             ></textarea>
           </div>
@@ -67,27 +68,28 @@ const ContactUs = () => {
           {/* Submit Button */}
           <button
             type='submit'
-            className='w-full bg-black text-white p-2 rounded-md hover:bg-gray-800'
+            className='w-full bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 transition-all 3s'
             onClick={handleSubmit}
           >
             Submit
           </button>
         </form>
 
+
         {/* Right Side - Address and Map */}
         <div className='flex flex-col w-1/2'>
-          <div className='p-8 h-1/2 bg-gray-100'>
+          <div className='p-8 h-1/2 bg-red-800 text-white'>
             <h2 className='text-xl font-semibold mb-2'>Contact Information</h2>
-            <p>123 Main Street</p>
-            <p>City, State ZIP</p>
+            <p>79M2+7J9 - شارع </p>
+            <p>Al Waheda - Dubai</p>
             <p>Phone: (123) 456-7890</p>
           </div>
 
           {/* Map */}
-          <div className='p-4 h-1/2'>
+          <div className='p-4 h-1/2 bg-red-800'>
             {/* Add your map component or embed code here */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14441.481043661524!2d55.4004588!3d25.1907331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f672af19bf8a1%3A0x65a97b12152572ca!2sOur%20Own%20High%20School%20Boys%20Al%20Warqa!5e0!3m2!1sen!2sae!4v1703840988023!5m2!1sen!2sae"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14430.504772848097!2d55.3516142!3d25.2831572!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c8e90d8d5cd%3A0x38eaa6fca0306eda!2sArabilla%20Building!5e0!3m2!1sen!2sae!4v1703939653579!5m2!1sen!2sae"
               width="100%"
               height="100%"
               loading="lazy"
