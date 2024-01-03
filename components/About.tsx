@@ -4,9 +4,9 @@ import constructionImage from '../public/construction.jpg';
 
 const About = () => {
   return (
-    <section id='about' className="flex flex-col-reverse md:flex-row items-center w-screen h-screen p-12 ">
+    <section id='about' className="flex flex-col-reverse md:flex-row items-center w-screen md:h-screen p-12 ">
       <div className="flex-shrink-0 md:mr-8 mb-4 md:mb-0">
-        <Image className='rounded-2xl' src={constructionImage} alt="Construction" width={300} height={200} />
+        <Image className='md:rounded-2xl rounded-full' src={constructionImage} alt="Construction" width={300} height={200} />
       </div>
 
       <div className="text-center md:text-left">

@@ -1,92 +1,26 @@
 "use client";
 import React from 'react';
+import { FaEnvelope } from 'react-icons/fa';
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdLocationOn } from "react-icons/md"
 
 const ContactUs = () => {
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    // Add your form submission logic here
-  };
-
   return (
-    <section id='contact' className='flex flex-col h-screen w-screen bg-gray-200'>
+    <section id='contact' className='flex flex-col h-3/4 w-screen'>
       <div className='flex-grow flex'>
-        {/* Contact Form - Left Side */}
-        <form className='p-8 w-1/2 shadow-xl bg-gray-100'>
-          <h1 className='text-4xl text-gray-800 font-bold'>CONTACT US</h1>
-          <p className='mb-6 text-gray-500'>Want to let us know something?</p>
-          {/* Name Field */}
+        {/* Contact Details - Left Side */}
+        <div className='p-12 bg-black w-1/3 flex flex-col justify-center'>
+          <h1 className='md:text-4xl text-2xl text-gray-100 font-bold'>CONTACT US</h1>
           <div className='mb-4'>
-            <label htmlFor='name' className='block text-sm font-medium text-gray-600'>
-              Name:
-            </label>
-            <input
-              type='text'
-              id='name'
-              name='name'
-              className='mt-1 p-2 w-full border border-gray-300 rounded-md'
-            />
+            <p className='flex text-gray-200 text-xl mt-8'><span><MdLocationOn className='mt-1 mr-2 text-red-400' /></span>79M2+7J9 - شارع, Al Waheda - Dubai</p>
+            <p className='flex text-gray-200 text-xl '><span className=''><BsFillTelephoneFill className='text-red-400 mr-2 mt-1' /></span> (123) 456-7890</p>
+            <p className='flex text-gray-200 text-xl '><span className=''><FaEnvelope className='text-red-400 mr-2 mt-1' /></span><a href="mailto:info@aspcuae.com" className='hover:text-red-400'>info@aspcuae.com</a> </p>
           </div>
+        </div>
 
-          {/* Email Field */}
-          <div className='mb-4'>
-            <label htmlFor='email' className='block text-sm font-medium text-gray-600'>
-              Email:
-            </label>
-            <input
-              type='email'
-              id='email'
-              name='email'
-              className='mt-1 p-2 w-full border border-gray-300 rounded-md'
-            />
-          </div>
-
-          <div className='mb-4'>
-            <label htmlFor='mobile' className='block text-sm font-medium text-gray-600'>
-              Mobile number:
-            </label>
-            <input
-              type='text'
-              id='mobile'
-              name='mobile'
-              className='mt-1 p-2 w-full border border-gray-300 rounded-md'
-            />
-          </div>
-
-          {/* Message Field */}
-          <div className='mb-4'>
-            <label htmlFor='message' className='block text-sm font-medium text-gray-600'>
-              Message:
-            </label>
-            <textarea
-              id='message'
-              name='message'
-              rows={4}
-              className='mt-1 p-2 w-full border border-gray-300 rounded-md'
-            ></textarea>
-          </div>
-
-          {/* Submit Button */}
-          <button
-            type='submit'
-            className='w-full bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 transition-all 3s'
-            onClick={handleSubmit}
-          >
-            Submit
-          </button>
-        </form>
-
-
-        {/* Right Side - Address and Map */}
-        <div className='flex flex-col w-1/2'>
-          <div className='p-8 h-1/2 bg-red-800 text-white'>
-            <h2 className='text-xl font-semibold mb-2'>Contact Information</h2>
-            <p>79M2+7J9 - شارع </p>
-            <p>Al Waheda - Dubai</p>
-            <p>Phone: (123) 456-7890</p>
-          </div>
-
-          {/* Map */}
-          <div className='p-4 h-1/2 bg-red-800'>
+        {/* Right Side - Map */}
+        <div className='w-2/3'>
+          <div className='p-8 h-full bg-black'>
             {/* Add your map component or embed code here */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14430.504772848097!2d55.3516142!3d25.2831572!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c8e90d8d5cd%3A0x38eaa6fca0306eda!2sArabilla%20Building!5e0!3m2!1sen!2sae!4v1703939653579!5m2!1sen!2sae"
@@ -94,13 +28,14 @@ const ContactUs = () => {
               height="100%"
               loading="lazy"
               title="Location Map"
+              className='rounded-2xl'
             ></iframe>
           </div>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="w-full bg-gray-300 text-gray-500 text-center p-4 mt-auto">
+      <footer className="w-full bg-black text-gray-400 text-center p-4 mt-auto">
         Copyright © 2023 ASPC Contractors
       </footer>
     </section>
