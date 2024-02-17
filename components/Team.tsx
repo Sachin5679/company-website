@@ -4,7 +4,7 @@ import MemberCard from './MemberCard';
 const Team = () => {
 
   return (
-    <section id='team' className="h-screen w-screen p-12">
+    <section id='team' className="h-3/4 w-screen p-12">
         <div className='text-center'>
             <div className=''>
                 <h1 className='text-7xl font-black'>OUR TEAM</h1>

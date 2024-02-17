@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -17,7 +18,7 @@ const Profile = () => {
   });
 
   const updateSliderSettings = () => {
-    const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
+    const isMobile = window.innerWidth <= 768;
     setSliderSettings({
       ...sliderSettings,
       slidesToShow: isMobile ? 1 : 4,
@@ -37,12 +38,12 @@ const Profile = () => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   };
 
   const imageStyle: React.CSSProperties = {
     objectFit: 'cover',
-    width: '90%', // Ensures the image takes up the full width of its container
+    width: '90%',
     height: '300px',
   };
 
@@ -70,14 +71,14 @@ const Profile = () => {
             <div>
               <img src="image5.jpeg" alt="Image 5" style={imageStyle} />
             </div>
-            {/* Add more images as needed */}
           </Slider>
         </div>
         <div className='flex m-8'>
-          <button className='flex flex-row items-center bg-black text-white p-4 hover:bg-white hover:text-black hover:shadow-xl hover:rounded-xl transition 1s'>
-            <span className='mr-2'>View All</span>
-            <FaArrowRight />
-          </button>
+          {/* Use Link for navigation and apply styles directly to it */}
+          <Link href='/projects' className='flex flex-row items-center bg-black text-white p-4 hover:bg-white hover:text-black hover:shadow-xl hover:rounded-xl transition 1s' passHref>
+              <span className='mr-2'>View All</span>
+              <FaArrowRight />
+          </Link>
         </div>
       </div>
     </section>
@@ -85,3 +86,4 @@ const Profile = () => {
 };
 
 export default Profile;
+

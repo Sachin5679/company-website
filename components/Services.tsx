@@ -40,11 +40,11 @@ const serviceList = [
 
 const Services = () => {
   return (
-    <section id="services" className="md:h-screen p-12 w-screen">
+    <section id="services" className="p-12 w-screen">
       <div className="text-center">
         <div className="">
           <h1 className="text-7xl font-black">OUR SERVICES</h1>
-          <p className="text-lg">A wide range of services that we provide</p>
+          <p className="text-xl">A wide range of services that we provide</p>
         </div>
         <div className="grid md:grid-cols-3 grid-cols-2">
           {serviceList.map((service, index) => (
