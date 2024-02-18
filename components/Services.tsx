@@ -1,41 +1,40 @@
 import React from 'react';
 import ServiceCard from './ServiceCard';
-import { MdAddLocation, MdEngineering, MdPlumbing } from 'react-icons/md';
+import { MdEngineering, MdPlumbing } from 'react-icons/md';
 import { FaFireExtinguisher, FaLightbulb, FaToolbox, FaTools } from "react-icons/fa";
 import { FiWind } from "react-icons/fi";
 
 const serviceList = [
   {
     title: 'Fire System',
-    icon: FaFireExtinguisher, // Use the React icon component here
-    text: 'We proof ourselves in the Competitive market with our safety induced Fire fighting system Supply , Installation & Maintenance',
+    icon: FaFireExtinguisher, 
+    text: 'We prove ourselves in the Competitive market with our safety induced Fire fighting system Supply , Installation & Maintenance',
   },
   {
     title: 'Maintenance',
-    icon: FaToolbox, // Use the React icon component here
+    icon: FaToolbox, 
     text: 'A brief description of the service.',
   },
   {
     title: 'Plumbing services',
-    icon: MdPlumbing, // Use the React icon component here
-    text: 'We proof ourselves in the Competitive market with our self-made expertise on the Supply, installation all types of plumbing, drainage and sanitary fixing works.',
+    icon: MdPlumbing, 
+    text: 'We prove ourselves in the Competitive market with our self-made expertise on the Supply, installation all types of plumbing, drainage and sanitary fixing works.',
   },
   {
     title: 'Electrical services',
-    icon: FaLightbulb, // Use the React icon component here
-    text: 'We Masteries the Competitive market with our miraculous expertise on the Supply, installation of electrical systems',
+    icon: FaLightbulb, 
+    text: 'We are masters of the Competitive market with our miraculous expertise on the Supply, installation of electrical systems',
   },
   {
     title: 'AC works',
-    icon: FiWind, // Use the React icon component here
-    text: 'We define perfection & Professionalism on our experience in the A/C Supply & Installation with accessories',
+    icon: FiWind,
+    text: 'We define perfection & professionalism on our experience in the A/C Supply & Installation with accessories',
   },
   {
     title: 'Civil works',
-    icon: MdEngineering, // Use the React icon component here
-    text: 'We proof ourselves in the Competitive market with our expertise way on the Supply, installation all types of Civil works.',
+    icon: MdEngineering, 
+    text: 'We prove ourselves in the Competitive market with our expertise way on the Supply, installation all types of Civil works.',
   },
-  // Add more services as needed
 ];
 
 const Services = () => {

@@ -57,19 +57,19 @@ const Profile = () => {
         <div className='w-4/5 justify-center bg-gray-100 shadow-xl rounded-xl'>
           <Slider {...sliderSettings} className='text-center p-5'>
             <div>
-              <img src="image1.jpeg" alt="Image 1" style={imageStyle} />
+              <img src="image1.png" alt="Image 1" style={imageStyle} />
             </div>
             <div>
-              <img src="image2.jpeg" alt="Image 2" style={imageStyle} />
+              <img src="image2.png" alt="Image 2" style={imageStyle} />
             </div>
             <div>
-              <img src="image3.jpeg" alt="Image 3" style={imageStyle} />
+              <img src="image3.png" alt="Image 3" style={imageStyle} />
             </div>
             <div>
-              <img src="image4.jpeg" alt="Image 4" style={imageStyle} />
+              <img src="image4.png" alt="Image 4" style={imageStyle} />
             </div>
             <div>
-              <img src="image5.jpeg" alt="Image 5" style={imageStyle} />
+              <img src="image5.png" alt="Image 5" style={imageStyle} />
             </div>
           </Slider>
         </div>
