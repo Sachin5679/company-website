@@ -46,16 +46,19 @@ const Page = () => {
   return (
     <div className='p-4'>
       <div className='flex justify-between items-center'>
-        <h1 className='text-2xl'>
+        <h1 className='text-2xl mb-4 md:mb-0'>
           Projects by <span className='text-2xl text-red-800 font-black'>ASPC</span>
         </h1>
-        <Link href='/' className='flex justify-end bg-black text-white p-4 hover:bg-red-800 hover:text-white hover:shadow-xl hover:rounded-xl transition 1s' passHref>
-          <span className='mr-2'>Back to Home</span>
-          <FaArrowLeft />
+        <Link href='/' passHref>
+          <div className='flex items-center bg-black text-white py-2 px-4 rounded-xl hover:bg-red-800 hover:text-white transition duration-300'>
+            <FaArrowLeft className='mr-2' />
+            Back to Home
+          </div>
         </Link>
+
       </div>
       <hr className='mt-2' />
-      <div className="grid grid-cols-3 gap-4 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
         {currentProjects.map((project, index) => (
           <div key={index} className="border p-4">
             <img src={project.image} alt={project.title} className="w-full h-3/4" />
