@@ -9,7 +9,7 @@ const client = createClient({
   projectId: 'cun1v7ir',
   dataset: 'production',
   apiVersion: '2023-05-03', // or the latest version
-  useCdn: false, // Set to true for production
+  useCdn: true, // Set to true for production
 });
 
 const Page = () => {
