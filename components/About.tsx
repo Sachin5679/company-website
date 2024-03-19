@@ -12,12 +12,12 @@ const About = () => {
       <div className="text-center md:text-left">
         <h2 className="text-4xl md:text-6xl font-bold mb-4">ABOUT US</h2>
         <p className="text-lg md:text-2xl">
-          ASPC prime values for the it’s preeminent QUALITY in selecting material
+          ASPC prime values for the it&apos;s preeminent QUALITY in selecting material
           and eminence of the agreed work at its best, supporting by veteran
           managerial rooting enabling RELIABILITY and TRUST for our
           CUSTOMER SATISFACTION. Our Project Management team supports with a deal of passion to the
           agreed projects strengthening the bind with our client or contractor
-          satisfaction. ASPC's commitment to excellence extends beyond material selection and work quality. Our unwavering dedication to effective project management ensures seamless execution, timely delivery, and cost-efficiency. By fostering a collaborative environment and emphasizing open communication, we prioritize the success of each project, building lasting partnerships and exceeding customer expectations.
+          satisfaction. ASPC&apos;s commitment to excellence extends beyond material selection and work quality. Our unwavering dedication to effective project management ensures seamless execution, timely delivery, and cost-efficiency. By fostering a collaborative environment and emphasizing open communication, we prioritize the success of each project, building lasting partnerships and exceeding customer expectations.
         </p>
       </div>
     </section>
