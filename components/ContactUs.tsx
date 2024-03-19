@@ -11,11 +11,14 @@ const ContactUs = () => {
         {/* Contact Details - Left Side */}
         <div className='p-12 bg-black w-1/3 flex flex-col justify-center'>
           <h1 className='md:text-4xl text-2xl text-gray-100 font-bold'>CONTACT US</h1>
-          <div className='mb-4'>
-            <p className='flex text-gray-200 text-xl mt-8'><span><MdLocationOn className='mt-1 mr-2 text-red-400' /></span>79M2+7J9 - شارع, Al Waheda - Dubai</p>
-            <p className='flex text-gray-200 text-xl '><span className=''><BsFillTelephoneFill className='text-red-400 mr-2 mt-1' /></span> (123) 456-7890</p>
-            <p className='flex text-gray-200 text-xl '><span className=''><FaEnvelope className='text-red-400 mr-2 mt-1' /></span><a href="mailto:info@aspcuae.com" className='hover:text-red-400'>info@aspcuae.com</a> </p>
-          </div>
+            <div className='mb-4'>
+              <p className='flex text-gray-200 text-xl mt-8'><span><MdLocationOn className='mt-1 mr-2 text-red-400' /></span>79M2+7J9 - شارع, Al Waheda - Dubai</p>
+              <p className='flex text-gray-200 text-xl '><span className=''><FaEnvelope className='text-red-400 mr-2 mt-1' /></span><a href="mailto:info@aspcuae.com" className='hover:text-red-400'>info@aspcuae.com</a></p>
+              <p className='flex text-gray-200 text-xl'><span><BsFillTelephoneFill className='text-red-400 mr-2 mt-1' /></span> +97144513525 </p>
+              <p className='flex text-gray-200 text-xl'> +971524531933 </p>
+              <p className='flex text-gray-200 text-xl'> +971552769485 </p>
+            </div>
+
         </div>
 
         {/* Right Side - Map */}
