@@ -61,7 +61,7 @@ const Page = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
         {currentProjects.map((project, index) => (
           <div key={index} className="border p-4">
-            <img src={project.image} alt={project.title} className="w-full md:h-3/4 h-2/3" />
+            <img src={project.image} alt={project.title} className="w-full md:h-3/4 h-2.5/4" />
             <h2 className="text-xl font-semibold mt-4">{project.title}</h2>
             <h3 className="text-gray-600">{project.type}</h3>
             <p className="flex text-gray-600"><MdLocationOn className='mt-1 mr-2 text-red-800' />{project.location}</p>
