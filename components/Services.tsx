@@ -13,7 +13,7 @@ const serviceList = [
   {
     title: 'Maintenance',
     icon: FaToolbox, 
-    text: 'A brief description of the service.',
+    text: 'We demonstrate our competency in the competitive market through our self-developed expertise in supplying, installing, and maintaining all varieties of fixtures.',
   },
   {
     title: 'Plumbing services',
