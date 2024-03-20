@@ -1,8 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import Image from 'next/image';
-import companyLogo from '../public/aspc1.jpeg';
+import { MdHome } from "react-icons/md";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -18,15 +17,19 @@ const Navbar = () => {
   return (
     <div className="lg:flex lg:justify-between lg:items-center py-6 px-10 shadow-xl fixed top-0 left-0 right-0 z-20 bg-white w-screen">
       <div className="flex items-center justify-between">
+        
         <div className="mr-4">
           {/* <Image src={companyLogo} alt="Company Logo" width={64} height={64} /> */}
           <h1
             className='text-4xl text-red-800 font-black cursor-pointer'
             onClick={scrollToTop}
           >
-            <a href="/">ASPC</a>
+            <a className='flex' href="/"><MdHome className='text-4xl mr-2 bg-red-800 text-white p-2 rounded-full' /> ASPC</a>
+            
           </h1>
+          
         </div>
+        
         {/* Menu button for mobile */}
         <button onClick={handleMenuToggle} className="lg:hidden focus:outline-none">
           <svg
@@ -42,11 +45,12 @@ const Navbar = () => {
       </div>
       {/* Navigation links */}
       <div className={`lg:flex ${isMenuOpen ? 'block' : 'hidden'} lg:text-xl mt-4 lg:mt-0`}>
-        <Link to="about" smooth={true} duration={500} offset={-80} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6 lg:mb-0 mb-2">ABOUT</Link>
+        <Link to="about" smooth={true} duration={500} offset={-45} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6 lg:mb-0 mb-2">ABOUT</Link>
         <Link to="services" smooth={true} duration={500} offset={-90} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">SERVICES</Link>
         <Link to="profile" smooth={true} duration={500} offset={-90} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">PROFILE</Link>
         {/* <Link to="team" smooth={true} duration={500} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">TEAM</Link> */}
-        <Link to="contact" smooth={true} duration={500} offset={-90} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700">CONTACT</Link>
+        <Link to="contact" smooth={true} duration={500} offset={-70} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700">CONTACT</Link>
+        
       </div>
     </div>
   );

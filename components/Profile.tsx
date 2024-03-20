@@ -48,14 +48,20 @@ const Profile = () => {
   };
 
   return (
-    <section id='profile' className="flex flex-col h-screen w-screen p-14 bg-gray-300">
+    <section id='profile' className="flex flex-col h-screen w-screen p-10 bg-gray-300">
       <div className='text-center' style={containerStyle}>
-        <div className='mb-6'>
+        <div className='mb-2'>
           <h1 className='text-7xl font-black'>PROFILE</h1>
           <p className='text-lg opacity-60'>We possess a vast portfolio of work</p>
         </div>
+        <div className='flex m-2'>
+          <Link href='/projects' className='flex flex-row items-center bg-black text-white p-4 hover:bg-white hover:text-black hover:shadow-xl hover:rounded-xl transition 1s' passHref>
+              <span className='mr-2'>View All</span>
+              <FaArrowRight />
+          </Link>
+        </div>
         <div className='w-4/5 justify-center bg-gray-100 shadow-xl rounded-xl'>
-          <Slider {...sliderSettings} className='text-center p-5'>
+          <Slider {...sliderSettings} className='text-center p-4'>
             <div>
               <img src="image1.png" alt="Image 1" style={imageStyle} />
             </div>
@@ -72,12 +78,6 @@ const Profile = () => {
               <img src="image5.png" alt="Image 5" style={imageStyle} />
             </div>
           </Slider>
-        </div>
-        <div className='flex m-8'>
-          <Link href='/projects' className='flex flex-row items-center bg-black text-white p-4 hover:bg-white hover:text-black hover:shadow-xl hover:rounded-xl transition 1s' passHref>
-              <span className='mr-2'>View All</span>
-              <FaArrowRight />
-          </Link>
         </div>
       </div>
     </section>
