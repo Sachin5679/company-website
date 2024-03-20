@@ -42,11 +42,11 @@ const Navbar = () => {
       </div>
       {/* Navigation links */}
       <div className={`lg:flex ${isMenuOpen ? 'block' : 'hidden'} lg:text-xl mt-4 lg:mt-0`}>
-        <Link to="about" smooth={true} duration={500} className="block lg:inline-block text-gray-800 hover:text-red-700 mr-6 lg:mb-0 mb-2">ABOUT</Link>
-        <Link to="services" smooth={true} duration={500} className="block lg:inline-block text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">SERVICES</Link>
-        <Link to="profile" smooth={true} duration={500} className="block lg:inline-block text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">PROFILE</Link>
-        {/* <Link to="team" smooth={true} duration={500} className="block lg:inline-block text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">TEAM</Link> */}
-        <Link to="contact" smooth={true} duration={500} className="block lg:inline-block text-gray-800 hover:text-red-700">CONTACT</Link>
+        <Link to="about" smooth={true} duration={500} offset={-80} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6 lg:mb-0 mb-2">ABOUT</Link>
+        <Link to="services" smooth={true} duration={500} offset={-90} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">SERVICES</Link>
+        <Link to="profile" smooth={true} duration={500} offset={-90} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">PROFILE</Link>
+        {/* <Link to="team" smooth={true} duration={500} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700 mr-6  lg:mb-0 mb-2">TEAM</Link> */}
+        <Link to="contact" smooth={true} duration={500} offset={-90} className="block lg:inline-block hover:cursor-pointer text-gray-800 hover:text-red-700">CONTACT</Link>
       </div>
     </div>
   );

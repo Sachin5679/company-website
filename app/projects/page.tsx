@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { FaArrowLeft } from 'react-icons/fa';
+import { FaArrowLeft,FaHome } from 'react-icons/fa';
 import { createClient } from '@sanity/client';
 import { MdLocationOn } from "react-icons/md"
 
@@ -15,7 +15,8 @@ const client = createClient({
 const Page = () => {
   const [projects, setProjects] = useState<any[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage] = useState(6); // Number of projects per page
+  const [projectsPerPage] = useState(6); 
+  const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -32,12 +33,12 @@ const Page = () => {
     fetchProjects();
   }, []);
 
-  // Logic for displaying projects on the current page
+  
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
   const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
 
-  // Logic for displaying page numbers
+  
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(projects.length / projectsPerPage); i++) {
     pageNumbers.push(i);
@@ -49,10 +50,23 @@ const Page = () => {
         <h1 className='text-2xl mb-4 md:mb-0'>
           Projects by <span className='text-2xl text-red-800 font-black'>ASPC</span>
         </h1>
+        <div className="flex justify-center mt-4 mb-4">
+          {pageNumbers.map((number) => (
+            <button
+              key={number}
+              className={`mr-2 px-3 py-1 rounded ${
+                number === currentPage ? 'bg-gray-800 text-white' : 'bg-gray-200 text-gray-800'
+              }`}
+              onClick={() => setCurrentPage(number)}
+            >
+              {number}
+            </button>
+          ))}
+        </div>
         <Link href='/' passHref>
           <div className='flex items-center bg-black text-white py-2 px-4 rounded-xl hover:bg-red-800 hover:text-white transition duration-300'>
-            <FaArrowLeft className='mr-2' />
-            Back to Home
+            
+            {isMobile ? <FaHome /> : <p className='flex'><FaArrowLeft className='mt-1 mr-2' />Back to Home</p>}
           </div>
         </Link>
 
@@ -68,19 +82,7 @@ const Page = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-4">
-        {pageNumbers.map((number) => (
-          <button
-            key={number}
-            className={`mr-2 px-3 py-1 rounded ${
-              number === currentPage ? 'bg-gray-800 text-white' : 'bg-gray-200 text-gray-800'
-            }`}
-            onClick={() => setCurrentPage(number)}
-          >
-            {number}
-          </button>
-        ))}
-      </div>
+
     </div>
   );
 };

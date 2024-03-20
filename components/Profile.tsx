@@ -48,7 +48,7 @@ const Profile = () => {
   };
 
   return (
-    <section id='profile' className="flex flex-col h-screen w-screen p-12 bg-gray-300">
+    <section id='profile' className="flex flex-col h-screen w-screen p-14 bg-gray-300">
       <div className='text-center' style={containerStyle}>
         <div className='mb-6'>
           <h1 className='text-7xl font-black'>PROFILE</h1>
@@ -74,7 +74,6 @@ const Profile = () => {
           </Slider>
         </div>
         <div className='flex m-8'>
-          {/* Use Link for navigation and apply styles directly to it */}
           <Link href='/projects' className='flex flex-row items-center bg-black text-white p-4 hover:bg-white hover:text-black hover:shadow-xl hover:rounded-xl transition 1s' passHref>
               <span className='mr-2'>View All</span>
               <FaArrowRight />
