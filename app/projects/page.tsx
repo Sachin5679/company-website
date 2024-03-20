@@ -16,7 +16,24 @@ const Page = () => {
   const [projects, setProjects] = useState<any[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [projectsPerPage] = useState(6); 
-  const isMobile = window.innerWidth <= 768;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if window object is defined before accessing it
+    if (typeof window !== 'undefined') {
+      setIsMobile(window.innerWidth <= 768); // Set initial isMobile value
+
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768); // Update isMobile value on resize
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
 
   useEffect(() => {
     const fetchProjects = async () => {
