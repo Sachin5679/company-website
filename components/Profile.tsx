@@ -52,8 +52,7 @@ const Profile = () => {
       <div className='text-center' style={containerStyle}>
         <div className='mb-2 text-white'>
           <h1 className='text-7xl font-black'>PROFILE</h1>
-          <p className='text-sm opacity-60 mx-4'>We possess a vast portfolio of work. Click on slider to explore further.</p>
-          
+          <p className='text-sm opacity-60 mx-4'>We possess a vast portfolio of work. Click image to explore further.</p>
         </div>
         {/* <div className='flex m-2'>
           <Link href='/projects' className='flex flex-row items-center bg-red-800 outline hover:outline-none text-white p-3 hover:bg-white hover:text-black hover:shadow-xl hover:rounded-xl transition 1s' passHref>
