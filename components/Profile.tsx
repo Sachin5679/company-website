@@ -62,7 +62,7 @@ const Profile = () => {
         </div> */}
         <div className='w-4/5 justify-center'>
           <Link href='/projects' passHref>
-            <Slider {...sliderSettings} className='text-center p-4'>
+            <Slider {...sliderSettings} className='text-center p-4 hover:opacity-75'>
               <div>
                 <img src="image1.png" alt="Image 1" style={imageStyle} />
               </div>
