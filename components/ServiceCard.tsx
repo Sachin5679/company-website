@@ -9,8 +9,8 @@ interface Service {
 
 const ServiceCard = ({ title, icon: IconComponent }: Service) => {
   return (
-    <div className="flex flex-col items-center p-4 md:m-4 m-2 border rounded-xl shadow-xl bg-white hover:bg-green-100 transition-all">
-      <IconComponent className="text-7xl mb-2 text-red-500" />
+    <div className="flex flex-col items-center p-4 md:m-4 m-3 border rounded-xl shadow-xl bg-white hover:bg-green-100 transition-all">
+      <IconComponent className="text-7xl mb-2 text-red-800" />
       <div className="md:text-2xl text-xl font-bold mb-2">{title}</div>
     </div>
   );

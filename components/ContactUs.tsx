@@ -6,7 +6,7 @@ import { MdLocationOn, MdContactPhone } from "react-icons/md"
 
 const ContactUs = () => {
   return (
-    <section id='contact' className='flex flex-col h-screen w-screen'>
+    <section id='contact' className='flex flex-col md:h-screen w-screen'>
       <div className='flex-grow flex'>
         {/* Contact Details - Left Side */}
         <div className='md:p-12 p-4 bg-black md:w-1/3 flex flex-col justify-center'>

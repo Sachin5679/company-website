@@ -80,10 +80,10 @@ const Page = () => {
             </button>
           ))}
         </div>
-        <Link href='/' passHref>
+        <Link href='/#profile' passHref>
           <div className='flex items-center bg-black text-white py-2 px-4 rounded-xl hover:bg-red-800 hover:text-white transition duration-300'>
             
-            {isMobile ? <FaHome /> : <p className='flex'><FaArrowLeft className='mt-1 mr-2' />Back to Home</p>}
+            {isMobile ? <FaHome /> : <p className='flex'><FaArrowLeft className='mt-1 mr-2' />Back to Profile</p>}
           </div>
         </Link>
 
