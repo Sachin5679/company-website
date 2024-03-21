@@ -52,14 +52,14 @@ const Profile = () => {
       <div className='text-center' style={containerStyle}>
         <div className='mb-2 text-white'>
           <h1 className='text-7xl font-black'>PROFILE</h1>
-          <p className='text-sm opacity-60 mx-4'>We possess a vast portfolio of work. Click image to explore further.</p>
+          <p className='text-sm opacity-60 mx-4'>We possess a vast portfolio of work.</p>
         </div>
-        {/* <div className='flex m-2'>
+        <div className='flex m-1'>
           <Link href='/projects' className='flex flex-row items-center bg-red-800 outline hover:outline-none text-white p-3 hover:bg-white hover:text-black hover:shadow-xl hover:rounded-xl transition 1s' passHref>
               <span className='mr-2'>Explore</span>
               <FaArrowRight />
           </Link>
-        </div> */}
+        </div>
         <div className='w-4/5 justify-center'>
           <Link href='/projects' passHref>
             <Slider {...sliderSettings} className='text-center p-4 hover:opacity-75'>

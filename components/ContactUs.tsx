@@ -12,7 +12,7 @@ const ContactUs = () => {
         <div className='md:p-12 p-4 bg-black md:w-1/3 flex flex-col justify-center'>
           <h1 className='md:text-6xl text-xl text-gray-100 font-bold'>CONTACT US</h1>
             <div className='mb-4'>
-              <p className='flex text-gray-200 md:text-xl text-xs mt-8'><span><MdLocationOn className='mt-1 mr-2 text-red-400' /></span>79M2+7J9 - شارع, Al Waheda - Dubai</p>
+              <p className='flex text-gray-200 md:text-xl text-xs mt-8'><span><MdLocationOn className='mt-1 mr-2 text-red-400' /></span>Arabilla Building, M28, Al Waheda, Dubai</p>
               <p className='flex text-gray-200 md:text-xl text-xs '><span className=''><FaEnvelope className='text-red-400 mr-2 mt-1' /></span><a href="mailto:info@aspcuae.com" className='hover:text-red-400'>info@aspcuae.com</a></p>
               <p className='flex text-gray-200 md:text-xl text-xs'><span><BsFillTelephoneFill className='text-red-400 mr-2 mt-1' /></span> +971 4 4513 525 </p>
               <p className='flex text-gray-200 md:text-xl text-xs'><span><MdContactPhone className='text-red-400 mr-2 mt-1' /></span> +971 52 4531 933 </p>
