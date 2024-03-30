@@ -11,7 +11,7 @@ const Hero = () => {
           ASPC
         </h1>
         <h1 className="md:text-5xl text-2xl">
-          CONTRACTORS
+          BUILDING CONTRACTING
         </h1>
         <p className="my-2 text-red-200">Elevating Projects with Unmatched Quality, Reliability and Customer Satisfaction.</p>
         <button className="outline my-4 p-4 rounded-xl hover:bg-white hover:text-red-800 hover:shadow-2xl hover:outline-none transition duration-300">
